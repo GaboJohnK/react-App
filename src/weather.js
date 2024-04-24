@@ -34,7 +34,7 @@ function WeatherDisplay({ city }) {
     const dailyForecasts = forecastData.list.filter((item, index) => index % 8 === 0); // Get forecast for every 24 hours (8 forecasts per day)
 
     return (
-      <div className='forecast-er'>
+      <div className='forecast-container'>
         {dailyForecasts.map((forecast, index) => (
           <div key={index} className='forecast-item'>
             <div>{new Date(forecast.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' })}</div>
@@ -43,8 +43,9 @@ function WeatherDisplay({ city }) {
               alt={forecast.weather[0].description}
               className='forecast-img'
             />
-            <div>Max:{Math.round(forecast.main.temp_max)}°C</div>
-             <div>Min: {Math.round(forecast.main.temp_min)}°C</div>
+            <div><span className='max'>{Math.round(forecast.main.temp_max)}°|</span>
+             <span className='min'>{Math.round(forecast.main.temp_min)}°</span>
+             </div>
           </div>
         ))}
       </div>
@@ -70,14 +71,14 @@ function WeatherDisplay({ city }) {
             <p id='define'>{weatherData.weather[0].description}</p>
             <div className='humidity-wind'>
             <p>🌡️Humidity: {weatherData.main.humidity}%</p>
-            <p className='wind'>🌫️Wind Speed: {weatherData.wind.speed} km/h</p>
+            <p className='wind'>🌫️Wind Speed: {Math.round(weatherData.wind.speed)} km/h</p>
             </div>
           </div>
         </div>
       )}
       {forecastData && (
         <div>
-          <div className='forecast-er'>
+          <div className='forecast-container'>
             {renderForecast()}
           </div>
         </div>

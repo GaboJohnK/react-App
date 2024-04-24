@@ -4,12 +4,11 @@ button{
     margin-left: 40px;
     font-size: 18px;
     color: rgb(18, 18, 19);
-    background-color: rgb(120, 120, 233);
     border-color: aliceblue;
     box-shadow: 5px 1px rgb(78, 73, 73);
 }
 button:hover{
-    background: rgb(229, 229, 233);
+    background: #b7b7db;
 }
 
 .cities{
@@ -32,54 +31,60 @@ form{
     width: 100px;
     border-radius: 5px;
     margin-left: 50px;
-    background-color: rgb(60, 214, 214);
+    background-color: #cecedd;
 }
 #search-btn:hover{
     background: white;
 }
 
 .time-date{
-    text-align: center;
-    margin: 0;
+    margin-left: 60px;
     line-height: 20px;
     color: rgb(48, 43, 43);
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    margin-top: 5px;
 }
 
 .city-name{
     margin-top: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: regular;
 }
 
 .temperature{
     margin-right: 400px;
-    padding-left: 100px;
+    padding-left: 80px;
 }
 #temp{
     font-size: 35px;
-    font-weight: 900;
+    font-weight: 500;
 }
 #unit{
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     bottom: 18px;
+    color: rgb(71, 55, 55);
 }
 .current-img{
-    width: 100px;
+    width: 120px;
     position: relative;
-    bottom: 40px;
+    bottom: 20px;
     left: 50px;
 }
 #define{
     font-size: 18px;
     position: relative;
-    bottom: 60px;
+    bottom: 20px;
     left: 40px;
     font-weight: 600;
 }
 
 .humidity-wind{
     position: relative;
-    left: 300px;
-    bottom: 120px;
+    left: 330px;
+    bottom: 150px;
     font-weight: 700;
 }
 .wind{
@@ -91,9 +96,11 @@ form{
     margin-bottom: 20px;
 }
 
-.forecast-er {
+.forecast-container {
     display: flex;
    justify-content: space-between;
+   position: relative;
+   bottom: 30px;
 
 }
 
@@ -103,8 +110,9 @@ form{
     text-align: center ;
     padding: 0px;
     border-radius: 8px;
-    background-color: #7B7BF7;
+    background-color: #cacaff;
     margin-right: 40px;
+    box-shadow: 5px 5px black;
 }
 
 .forecast-item img {
@@ -114,4 +122,11 @@ form{
 
 .forecast-item div {
     margin-top: 5px;
+}
+
+.min{
+    color: rgb(73, 67, 67);
+}
+.max{
+    font-weight: 400;
 }

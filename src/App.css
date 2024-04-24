@@ -2,13 +2,15 @@
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
   font-style: normal;
-  background-color: rgb(235, 235, 243);
+  background-color: rgb(242, 242, 255);
   border-radius: 10px;
   padding-left: 50px;
   padding-top: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 700px;
   margin: 0 auto;
-  height: 700px;
+  height: 640px;
   margin-top: 15px;
+  background-image: url('./image.jpg');
+  background-size: cover;
 }
