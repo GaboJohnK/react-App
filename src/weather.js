@@ -54,14 +54,18 @@ function WeatherDisplay({ city }) {
     <div className='weather-display'>
       {weatherData && (
         <div className='current-weather'>
-          <h2>{weatherData.name}, {weatherData.sys.country}</h2>
+          <h2 className='city-name'>{weatherData.name}, {weatherData.sys.country}</h2>
           <div>
-            <p>Current Temperature: {weatherData.main.temp}°C</p>
+            <div className='temperature'>
+            <p id='temp'>{Math.round(weatherData.main.temp)}
+            <span id='unit'>°C</span>
+            </p>
+            </div>
             <img
               src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
               alt={weatherData.weather[0].description}
             />
-            <p>Weather: {weatherData.weather[0].description}</p>
+            <p id='define'>{weatherData.weather[0].description}</p>
             <p>Humidity: {weatherData.main.humidity}%</p>
             <p>Wind Speed: {weatherData.wind.speed} km/h</p>
             

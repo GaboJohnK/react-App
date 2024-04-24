@@ -46,31 +46,32 @@ form{
 }
 
 .city-name{
-    margin-right: 480px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .temperature{
     margin-right: 400px;
-    padding-left: 30px;
+    padding-left: 100px;
 }
 #temp{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 900;
 }
 #unit{
     font-size: 18px;
     position: relative;
-    bottom: 10px;
+    bottom: 18px;
 }
 img{
-    width: 130px;
+    width: 100px;
+    position: relative;
+    bottom: 40px;
 }
-#discrpt{
+#define{
     font-size: 18px;
     position: relative;
-    bottom: 30px;
-    left: 70px;
+    bottom: 60px;
+    left: 40px;
     font-weight: 600;
 }
 
