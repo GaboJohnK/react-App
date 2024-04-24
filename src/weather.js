@@ -86,7 +86,7 @@ function WeatherDisplay({ city }) {
       <p className="link">
         This project was coded by Gabo John
         {" "}
-        <a href="https://github.com/GaboJohnK/react-weather-app" target="_blank" 
+        <a href="https://github.com/GaboJohnK/react-App" target="_blank" 
         rel="noopener noreferrer">
           open-sourced on GitHub 
         </a>{" "}

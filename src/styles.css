@@ -51,7 +51,7 @@ form{
     margin-top: 40px;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-style: regular;
+    font-style: normal;
 }
 
 .temperature{
@@ -144,4 +144,15 @@ form{
 .link{
     position: relative;
     bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+}
+
+.link a:hover {
+text-decoration: underline;
+color: rgb(181, 216, 25);
 }
