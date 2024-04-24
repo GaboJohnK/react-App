@@ -1,6 +1,7 @@
 button{
-    margin-right: 30px;
-    padding-right: 10px;
+    margin-right: 40px;
+    padding-left: 10px;
+    margin-left: 40px;
     font-size: 18px;
     color: rgb(18, 18, 19);
     background-color: rgb(120, 120, 233);
@@ -15,9 +16,8 @@ button:hover{
     text-align: center;
 }
 form{
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
-    margin-right: 0px;
 }
 #cityInput{
     font-size: 18px;
@@ -31,7 +31,7 @@ form{
     padding: 10px;
     width: 100px;
     border-radius: 5px;
-    margin-left: 30px;
+    margin-left: 50px;
     background-color: rgb(60, 214, 214);
 }
 #search-btn:hover{
@@ -62,10 +62,11 @@ form{
     position: relative;
     bottom: 18px;
 }
-img{
+.current-img{
     width: 100px;
     position: relative;
     bottom: 40px;
+    left: 50px;
 }
 #define{
     font-size: 18px;
@@ -78,36 +79,32 @@ img{
 .humidity-wind{
     position: relative;
     left: 300px;
-    bottom: 180px;
+    bottom: 120px;
     font-weight: 700;
 }
 .wind{
     margin-top: 30px;
 }
 
-.weather-display {
-    position: relative;
-
-}
 
 .current-weather {
     margin-bottom: 20px;
 }
 
-.forecast-container {
+.forecast-er {
     display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 
 }
 
 .forecast-item {
     flex: 0 0 auto;
-    width: 80px;
+    width: 90px;
     text-align: center ;
     padding: 0px;
     border-radius: 8px;
     background-color: #7B7BF7;
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 .forecast-item img {

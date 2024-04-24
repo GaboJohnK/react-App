@@ -34,13 +34,14 @@ function WeatherDisplay({ city }) {
     const dailyForecasts = forecastData.list.filter((item, index) => index % 8 === 0); // Get forecast for every 24 hours (8 forecasts per day)
 
     return (
-      <div className='forecast-container'>
+      <div className='forecast-er'>
         {dailyForecasts.map((forecast, index) => (
           <div key={index} className='forecast-item'>
             <div>{new Date(forecast.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' })}</div>
             <img
               src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}
               alt={forecast.weather[0].description}
+              className='forecast-img'
             />
             <div>Max:{Math.round(forecast.main.temp_max)}°C</div>
              <div>Min: {Math.round(forecast.main.temp_min)}°C</div>
@@ -64,17 +65,19 @@ function WeatherDisplay({ city }) {
             <img
               src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
               alt={weatherData.weather[0].description}
+              className='current-img'
             />
             <p id='define'>{weatherData.weather[0].description}</p>
-            <p>Humidity: {weatherData.main.humidity}%</p>
-            <p>Wind Speed: {weatherData.wind.speed} km/h</p>
-            
+            <div className='humidity-wind'>
+            <p>🌡️Humidity: {weatherData.main.humidity}%</p>
+            <p className='wind'>🌫️Wind Speed: {weatherData.wind.speed} km/h</p>
+            </div>
           </div>
         </div>
       )}
       {forecastData && (
         <div>
-          <div className='forecast-container'>
+          <div className='forecast-er'>
             {renderForecast()}
           </div>
         </div>
