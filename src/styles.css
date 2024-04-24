@@ -3,12 +3,13 @@ button{
     padding-left: 10px;
     margin-left: 40px;
     font-size: 18px;
+    background: #cecedd;
     color: rgb(18, 18, 19);
-    border-color: aliceblue;
-    box-shadow: 5px 1px rgb(78, 73, 73);
+    border-color: #cecedd;
+    box-shadow: 1px 1px rgb(78, 73, 73);
 }
 button:hover{
-    background: #b7b7db;
+    background: white;
 }
 
 .cities{
@@ -112,7 +113,7 @@ form{
     border-radius: 8px;
     background-color: #cacaff;
     margin-right: 40px;
-    box-shadow: 5px 5px black;
+    box-shadow: 1px 1px rgb(49, 47, 47);
 }
 
 .forecast-item img {
@@ -129,4 +130,13 @@ form{
 }
 .max{
     font-weight: 400;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(25, 27, 29);
+    font-size: 20px;
 }

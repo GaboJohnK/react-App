@@ -83,6 +83,17 @@ function WeatherDisplay({ city }) {
           </div>
         </div>
       )}
+      <p className="link">
+        This project was coded by Gabo John
+        {" "}
+        <a href="https://github.com/GaboJohnK/react-weather-app" target="_blank" 
+        rel="noopener noreferrer">
+          open-sourced on GitHub 
+        </a>{" "}
+        and hosted on {' '}
+        <a href='https://dancing-horse-bb55ec.netlify.app/' target='_blank' 
+        rel='noopener noreferrer'> Netlify</a> 
+      </p>
     </div>
   );
 }
