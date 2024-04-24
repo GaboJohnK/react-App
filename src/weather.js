@@ -70,7 +70,7 @@ function WeatherDisplay({ city }) {
             />
             <p id='define'>{weatherData.weather[0].description}</p>
             <div className='humidity-wind'>
-            <p>🌡️Humidity: {weatherData.main.humidity}%</p>
+            <p className='humidity'>🌡️Humidity: {weatherData.main.humidity}%</p>
             <p className='wind'>🌫️Wind Speed: {Math.round(weatherData.wind.speed)} km/h</p>
             </div>
           </div>

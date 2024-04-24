@@ -4,13 +4,32 @@
   font-style: normal;
   background-color: rgb(242, 242, 255);
   border-radius: 10px;
-  padding-left: 50px;
-  padding-top: 20px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 700px;
   margin: 0 auto;
-  height: 640px;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
   margin-top: 15px;
+  height: auto;
   background-image: url('./image.jpg');
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .weather-card{
+    padding: 50px;
+    width: 90%;
+    font-size: 20px;
+  }
+  
+}
+@media (max-width: 500px) {
+
+  .weather-card {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+
+  }
 }
